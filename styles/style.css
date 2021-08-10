@@ -1,0 +1,36 @@
+
+.btn{
+  background: linear-gradient(90deg, #1E96C8 15.07%, #37AEE2 85.96%);
+  color: #ffffff;
+}
+
+.btn_dark{
+  background: #295093;
+  color: #ffffff;
+}
+
+footer > div > span{
+  background: #ffffff;
+  color: #295093;
+}
+
+header > div > ul > li > span{
+  color: #285193;
+}
+
+.infected{
+  color: #DB0000;
+}
+
+.recovered{
+  color: #05B135;
+}
+
+footer{
+  background: #295093;
+  color: #ffffff;
+}
+
+.hashtag{
+  color: #28508E;
+}
