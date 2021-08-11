@@ -1,13 +1,130 @@
 
+body{
+  font-family: 'Rubik';
+}
+
+/* header */
+
+.header{
+  display: flex;
+  justify-content: space-between;
+}
+
+.header_inner_1, .header_inner_1 > ul, .header_inner_2 > ul{
+  display: flex;
+  justify-content: space-around;
+}
+
+.header_inner_1 > ul > li, 
+.header_inner_2 > ul > li{
+  margin: 0 20px;
+}
+
+.header_inner_1 > ul > li {
+  font-weight: 400;
+}
+
+/* navbar */
+
+.navbar .navbar_list{
+  display: flex;
+  justify-content: space-evenly;
+  font-weight: 500;
+}
+
+li{
+  list-style: none;
+}
+
+/* main section */
+
+.covid_section, .covid_section > dl{
+  display: flex;
+  justify-content: space-around;
+  font-weight: 500;
+}
+
+.covid_section div{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/* news section */
+
+.news{
+  display: flex;
+}
+
+.news_list_item{
+  display: flex;
+}
+
+.news_list_item h3{
+  font-weight: 500;
+}
+
+.news_list_item p{
+  font-weight: 400;
+}
+
+aside{
+  display: flex;
+  flex-direction: column;
+}
+
+aside h2{
+  font-weight: 500;
+}
+
+aside a{
+  font-weight: 400;
+}
+
+.popular_news_inner{
+  display: flex;
+}
+
+/* footer */
+
+.footer_logo, .footer_btn, .footer_links{
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer_links{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.footer_links a{
+  color: #ffffff;
+}
+
+
+
 .btn{
   background: linear-gradient(90deg, #1E96C8 15.07%, #37AEE2 85.96%);
   color: #ffffff;
+  padding: 10px;
+  font-weight: 500;
 }
 
 .btn_dark{
   background: #295093;
   color: #ffffff;
+  padding: 10px;
+  font-weight: 500;
 }
+
+.btn_light{
+  background-color: #ffffff;
+  color: #285193;
+  margin: 10px;
+  font-weight: 500;
+  padding: 10px;
+}
+
+
 
 footer > div > span{
   background: #ffffff;

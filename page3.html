@@ -4,6 +4,9 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap" rel="stylesheet">
   <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
   <link rel="stylesheet" href="styles/style.css">
   <title>page2</title>
@@ -11,23 +14,26 @@
 <body>
   
   <header>
-    <div>
-      <a href="#"><img src="img/logo.png" alt="logo" width="306px"></a>
-      <ul>
-        <li><span><i class='bx bx-dollar' ></i></span>10137.2</li>
-        <li><span><i class='bx bx-ruble' ></i></span>158.26</li>
-        <li><span><i class='bx bx-euro' ></i></span>10989.72</li>
-      </ul>
-    </div>
-    <div>
-      <a href="#"><i class='bx bx-search-alt-2'></i></a>
-      <a href="#"><img src="img/cif_ru.png" alt="ru"></a>
-      <span>РУ</span>
-      <div class="btn"><a href="#"><i class='bx bxl-telegram'>Подписатся</i></a></div>
+    <div class="header">
+      <div class="header_inner_1">
+        <a href="index.html"><img src="img/logo.png" alt="logo" width="306px"></a>
+        <ul>
+          <li><span><i class='bx bx-dollar' ></i></span>10137.2</li>
+          <li><span><i class='bx bx-ruble' ></i></span>158.26</li>
+          <li><span><i class='bx bx-euro' ></i></span>10989.72</li>
+        </ul>
+      </div>
+      <div class="header_inner_2">
+        <ul>
+          <li><a href="#"><i class='bx bx-search-alt-2'></i></a></li>
+          <li><a href="#"><img src="img/cif_ru.png" alt="ru"><span>РУ</span></a></li>
+          <li><a class="btn" href="#"><i class='bx bxl-telegram'>Подписатся</i></a></li>
+        </ul>
+      </div>
     </div>
 
-    <nav>
-      <ul>
+    <nav class="navbar">
+      <ul class="navbar_list">
         <li><a href="#">Узбекистана </a></li>
         <li><a href="#">Мир</a></li>
         <li><a href="#">Экономика</a></li>
@@ -40,15 +46,15 @@
         <li><a href="#">Туризм</a></li>
       </ul>
     </nav>
-
-    <aside>
+    
+    <div class="reklama">
       <a href="#">
         <img src="img/nrg-banner.jpg" alt="reklama" width="1200px">
       </a>
-    </aside>
+    </div>
   </header>
 
-  <main>
+  <main class="news">
     <section>
       <div>
         <h2>
@@ -118,64 +124,69 @@
     </aside>
   </main>
 
-  <section>
+  <div class="popular_news">
     <h2>Новости по теме</h2>
-    <li>
-      <a href="#">
-        <img src="img/prezident.jpg" alt="prezident" width="386" height="190">
-        <h3>Мирзиёев рассказал, зачем было построено <br> Сардобинское водохранилище</h3>
-        <time datetime="2020-07-07">05:28 / 16.05.2020</time>
-      </a>
-    </li>
-    <li>
-      <a href="#">
-        <img src="img/karantin.jpg" alt="karantin" width="386" height="190">
-        <h3>Карантин в Узбекистане продлен до 1 июня</h3>
-        <time datetime="2020-07-07">05:28 / 16.05.2020</time>
-      </a>
-    </li>
-    <li>
-      <a href="#">
-        <img src="img/sardoba.jpg" alt="sardoba" width="386" height="190">
-        <h3>Обмелевшая Сардоба: стихия или <br>
-          человеческий фактор?</h3>
-        <time datetime="2020-07-07">05:28 / 16.05.2020</time>
-      </a>
-    </li>
-  </section>
+    <div class="popular_news_inner">
+      <li>
+        <a href="#">
+          <img src="img/prezident.jpg" alt="prezident" width="386" height="190">
+          <h3>Мирзиёев рассказал, зачем было построено <br> Сардобинское водохранилище</h3>
+          <time datetime="2020-07-07">05:28 / 16.05.2020</time>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="img/karantin.jpg" alt="karantin" width="386" height="190">
+          <h3>Карантин в Узбекистане продлен до 1 июня</h3>
+          <time datetime="2020-07-07">05:28 / 16.05.2020</time>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="img/sardoba.jpg" alt="sardoba" width="386" height="190">
+          <h3>Обмелевшая Сардоба: стихия или <br>
+            человеческий фактор?</h3>
+          <time datetime="2020-07-07">05:28 / 16.05.2020</time>
+        </a>
+      </li>
+    </div>
+  </div>
 
   <footer>
-    <div>
-      <img src="img/logo.png" alt="logo">
+    <div class="footer_logo">
+      <div>
+        <img src="img/footer-logo.png" alt="logo">
+      </div>
+      <div class="footer_btn">
+        <p>
+          Подписывайтесь на наш канал в Telegram и будьте всегда в курсе самых последних новостей:
+        </p>
+        <span class="btn_light"><a href="#"><i class='bx bxl-telegram' >Подписатся</i></a></span>
+      </div>
     </div>
-    <div>
-      <p>
-        Подписывайтесь на наш канал в Telegram и будьте всегда в курсе самых последних новостей:
-      </p>
-    </div>
-    <div>
-      <span class="btn_light"><a href="#"><i class='bx bxl-telegram' >Подписатся</i></a></span>
-    </div>
-    <div>
-      <h2>О сайте</h2>
-      <p> 
-        Воспроизводство, копирование, тиражирование, распростране ние и иное использование информации с сайта «NAMANGANLIKLAR24.UZ» возможно только с предварительного письменного разрешения редакции.
-      </p>
-    </div>
-    <div>
-      <ul>
-        <li><a href="#">Информация о сайте</a></li>
-        <li><a href="#">Напишите нам</a></li>
-        <li><a href="#">Реклама</a></li>
-        <li><a href="#">Прислать новость</a></li>
-      </ul>
-    </div>
-    <div>
-      <ul>
-        <li><a href="#">Использование материалов</a></li>
-        <li><a href="#">Темы дня</a></li>
-        <li><a href="#">Наша команда</a></li>
-      </ul>
+
+    <div class="footer_links">
+      <div>
+        <h2>О сайте</h2>
+        <p> 
+          Воспроизводство, копирование, тиражирование, <br> распростране ние и иное использование <br> информации с сайта «NAMANGANLIKLAR24.UZ» <br> возможно только с предварительного <br> письменного разрешения редакции.
+        </p>
+      </div>
+      <div>
+        <ul>
+          <li><a href="#">Информация о сайте</a></li>
+          <li><a href="#">Напишите нам</a></li>
+          <li><a href="#">Реклама</a></li>
+          <li><a href="#">Прислать новость</a></li>
+        </ul>
+      </div>
+      <div>
+        <ul>
+          <li><a href="#">Использование материалов</a></li>
+          <li><a href="#">Темы дня</a></li>
+          <li><a href="#">Наша команда</a></li>
+        </ul>
+      </div>
     </div>
   </footer>
 </body>
