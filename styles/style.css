@@ -205,6 +205,13 @@ li{
   margin-right: 20px;
 }
 
+.news-title{
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
+}
+
 .new{
   display: flex;
   align-items: center;
